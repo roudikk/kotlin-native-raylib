@@ -1,0 +1,9 @@
+headers = raylib.h
+headerFilter = raylib.h
+package = raylib
+
+# Compiler options: point to the folder containing raylib headers
+compilerOpts.linux = -Iraylib/include
+
+# Linker options: point to the Raylib static or shared library
+linkerOpts.linux = raylib/lib/libraylib.a
